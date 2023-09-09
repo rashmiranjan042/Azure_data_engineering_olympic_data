@@ -36,8 +36,11 @@ provide the details.
 
 important to select the type of redundancy .
 There are 3 types of redundancy available to provide the high availablity feature of cloud.
+
 lrs(locally redundant storage),
+
 zrs(zone redundant storage),
+
 grs(geo redundant storage).
 
 To prevent from any failure.
@@ -58,3 +61,4 @@ click on data factory then create one.
 provide the reource group name then click on review and create.
 
 
+After performing etl we will look at how to analyze the data using azure data bricks.
