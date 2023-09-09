@@ -5,7 +5,7 @@ click on that name we give for our resource group name.
 lets add the azure services to the group for our project
 
 In this project we are going to use
-Azure blob storage
+Azure blob storage , which resides in azure storage account.
 using azure blob storage we will create azure data lake gen2
 
 Then we create container inside container we add directories or folders.
@@ -30,4 +30,21 @@ By a single check box we can covert our simple blob storage to azure data lake g
 
 # lets do that.
 
-search # blob storeage
+search azure storage account.
+
+provide the details.
+
+important to select the type of redundancy .
+There are 3 types of redundancy available to provide the high availablity feature of cloud.
+lrs(locally redundant storage),
+zrs(zone redundant storage),
+grs(geo redundant storage).
+
+To prevent from any failure.
+
+click on next to go advance section.
+There we have to click the checkbox ☑ of hierarchical namespace.
+
+This convert to azure data lake gen2.
+
+click create to create.
