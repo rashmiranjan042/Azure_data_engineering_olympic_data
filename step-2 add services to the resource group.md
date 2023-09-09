@@ -48,3 +48,13 @@ There we have to click the checkbox ☑ of hierarchical namespace.
 This convert to azure data lake gen2.
 
 click create to create.
+
+# lets add azure data factory to our resource group
+
+In home search data factory.
+click on data factory then create one.
+
+
+provide the reource group name then click on review and create.
+
+
