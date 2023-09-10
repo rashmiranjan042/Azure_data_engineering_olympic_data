@@ -9,6 +9,9 @@ click in the resource group.
 
 click on adf name you provide to create here i provide dataparactice .
 
+![Screenshot 8](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/4b102396-889e-4427-ba42-e34390b95947)
+
+
 click on launch studio to launch data factory.
 
 it will open in a new tab. it looks like spmething this.
@@ -28,6 +31,8 @@ IN home , it gives us direct operation links to help us.
 
 # Ingest
 
+![Screenshot 9](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/3e82aa9c-f658-46ba-ad5c-ed0750d8901f)
+
 it will ask us to fill the details about data and the source location also about triggers to set and the location to store the copy data.
 
 But mostly we dont do ingest data using this method , we go to author mode which is the most appropriate method to do all the operation.
@@ -38,6 +43,8 @@ To step back from this tab click on cancel button which is placed righmost botto
 
 when we click on this 
 
+![Screenshot10](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/816ec8c9-017b-4147-a8bf-bedc5a86955b)
+
 it will open author page and create a pipeline1 and ask  us to do etl activities
 
 and run the pipeline.
@@ -45,6 +52,8 @@ and run the pipeline.
 To close this tab click ❎ on pipeline1 and discard changes to back home.
 
 # Transform Data
+
+![Screenshot 11](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/2f853c31-aa70-4890-a746-f872be32dddc)
 
 After the data resides in datasets , lets perform data operations or transforms through sql quries using data flows .
 
@@ -59,7 +68,10 @@ To get back from this page click on the dataflow1 name and cancel and click on d
 
 # configure ssis
 
-Integration runtime is the compute infrastructure us by Adf to provide integrartion capabilities over different network environment.
+![Screenshot 12](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/3bd514c5-5855-4c14-8523-ebab27cf8a97)
+
+
+Integration runtime is the compute infrastructure use by Adf to provide integrartion capabilities over different network environment.
 
 There are 3 types of integreation runtimes.
 
@@ -96,7 +108,11 @@ it will take back to you manage integration runtime page.
 
 Where you can create integration runtime.
 
+
+
 # author
+
+![Screenshot 13](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/f3db49c0-3075-4849-a50e-6a12a4f69f54)
 
 when we click on author, as we can see that there 5 things availbe to do operation.
 
@@ -118,12 +134,13 @@ cdc in preview phase it will lauch by azure in upcoming days in which it will go
 in pipeline there are lot of activities to do on data.
 lets create a pipeline 
 
-scrrenshot 14
+![Screenshot 14](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/f62a1ea3-b4e1-4f51-80cf-d6b94fe8e887)
 
 click on ... right side of pipeline , create a pipeline named as pipeline1.
 we also create a folder of pipeline to run.
 
-screenshot 15
+![Screenshot 15](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/514ed348-21e2-4f5b-a9b5-e928fd7f21ef)
+
 
 Here we can rename the pipeline.
 
