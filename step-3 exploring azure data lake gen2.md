@@ -3,25 +3,25 @@ click on the account name we give for our stroge account to store data in azure 
 
 In the data and storage section , there are 4 options available to store different type of data.
 
-container
+**container**
 
-file share
+**file share**
 
-queue
+**queue**
 
-tables
+**tables**
 
 lets create container to store the data.
 inside container we also add directory , so that our data store in different folders.
 
-IN container there is a bydefault container availabe which store our log data.
+IN container there is a by default container availabe which store our log data.
 
-click on + container to create one container and give container name ,
+click on + container  to create one container and give container name ,
 create
 
 click on the container name, to go inside container. lets create folder by 
 
-click on add directory.
+click on  add directory.
 
 provide the name and save. lets name it as raw data.
 
