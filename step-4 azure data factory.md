@@ -1,5 +1,10 @@
 # Lets perform etl using ADF
 
+It is the cloud based etl and dara integration service that allows you to create data driven workflows for orchestrating data movement and transformation at scale.
+
+**it is not the oltp**
+Here we only orchestrate data movement.
+
 click in the resource group.
 
 click on adf name you provide to create here i provide dataparactice .
@@ -108,4 +113,71 @@ when we click on author, as we can see that there 5 things availbe to do operati
 using this we will create a pipeline and run activities .
 
 cdc in preview phase it will lauch by azure in upcoming days in which it will going to be stable.
+
+# pipeline
+in pipeline there are lot of activities to do on data.
+lets create a pipeline 
+
+scrrenshot 14
+
+click on ... right side of pipeline , create a pipeline named as pipeline1.
+we also create a folder of pipeline to run.
+
+screenshot 15
+
+Here we can rename the pipeline.
+
+These are the activities perform in a pipeline to build a successful pipeline to run.
+
+# activities  
+represent a processing step in a pipeline.
+
+There are 3 types of activities.
+
+a) Data movemnt activities
+
+b) Data transformation activities
+
+c) control flow activities
+
+# datsets
+
+Datasets are the reference point of the data we ant to use in our activities  as inputs or outputs.
+
+In this project , the datasets are the reference point to raw data directory which reside in container. 
+where we aaare going to ingest the data and store in raw data.
+
+# linked service
+Linked services are like connect strings, which define the connection information that's needed for data factory to connect to external sources.
+
+# data flow
+Using data flow we create visually designed transformaqtions in azure data factory.
+
+Data flows allow data engineers to develop data transformation logic without writting code.
+
+This data flow run on adf managed clusters for scaled out data processing.
+
+
+
+# validation and publish all
+
+click on validate to check the validation of code or activies.
+
+publich all is the save option.
+
+
+# trigger
+
+after publishing the pipeline ,
+
+we need to run the pipeline
+
+to run a pipeline we set triger .
+
+Triggers represent a unit of processing that determines when a pipeline exzecution need to be kicked off.
+
+# types
+1) scheduled trigger   ( A trigger that invokes a pipeline on a wall clock schedule )
+2) tumbling window trigger  ( a trigger that operates on a periodic interval)
+3) event based trigger    ( A trigger that responds to an event)
 
