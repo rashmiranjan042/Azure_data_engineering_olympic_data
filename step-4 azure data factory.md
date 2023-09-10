@@ -54,4 +54,35 @@ To get back from this page click on the dataflow1 name and cancel and click on d
 
 # configure ssis
 
+Integration runtime is the compute infrastructure us by Adf to provide integrartion capabilities over different network environment.
 
+There are 3 types of integreation runtimes.
+
+1) azure integration runtime
+2) self hosted integration runtime
+3)azure ssis( sql service integration service) integration runtime
+
+# when to use what kind of ir ?
+
+1) for azure services, like if you want to perform copy activities between azure services like, azure blob storage, sql server, cosmos db and other azure owned databae service, we will run azure integration runtime.
+2) for onpremises, virtual network , use azure self hosted integration runtime
+3) for your ssis packages use ssis integration runtime.
+
+when we click on the configure ssis, it will open a window for integration runtime setup.
+
+which ssis type.
+
+using this you will pick up your ssis to cloud.
+
+# note 
+if you have to use data flows, in your data pipeline, you shouldn't use self hosted, because it is not supported.
+
+Here you have first stage/store the data on cloud, then use azure integration runtime to run dataflows on the top of that data set.
+
+to get back from this configure ssis page to home click on cancel button on the right bottom .
+
+again click on cancel
+
+it will take back to you manage integration runtime page.
+
+Where you can create integration runtime.
