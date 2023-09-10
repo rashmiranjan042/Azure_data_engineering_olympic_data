@@ -153,5 +153,19 @@ Here we have options trigger now and new /edit trigger where we can set the type
 
 we run tigger now. 
 
+![Screenshot 29](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/f78fdc78-3bd4-461a-9c01-35895e2b9fb7)
 
+In monitor section we will monitor 
+
+pipeline run
+
+trigger run
+
+integration runntime
+
+After the pipeline run succeded
+
+we will go to our storage account and look at the data stored in our raw data folder.
+
+![Screenshot 30](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/33a01ab2-0349-4987-9cd0-f60b0f5f37ad)
 
