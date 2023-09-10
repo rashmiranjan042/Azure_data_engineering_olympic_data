@@ -31,3 +31,18 @@ click continue.
 Here we have to provide the data set name and create a linked service , which will establish a connection bewtween adf and github.
 
 
+Then we have to sink this data to our azure storage account container, where our folders reside , here which is azure data lake gen2 as we create
+
+click on sink 
+
+click on new
+
+select azure data lake gen2 
+
+select the file format we want to store the data.
+
+Here csv.
+
+
+
+
