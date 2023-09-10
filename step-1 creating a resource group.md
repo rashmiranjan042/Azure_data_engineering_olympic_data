@@ -7,6 +7,8 @@ lets create a resource group
 
 By clicking create a resource group
 
+![Screenshot 1](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/b299f2f5-9005-4240-bb05-f9ecd6be6d75)
+
 provide the subscription
 Name your resource group
 
