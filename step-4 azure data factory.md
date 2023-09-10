@@ -50,3 +50,8 @@ when we click on tranform it will take us to author page and there  it will crea
 
 Then provide the sink location to store the transformed data.
 
+To get back from this page click on the dataflow1 name and cancel and click on discard and close.
+
+# configure ssis
+
+
