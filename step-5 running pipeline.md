@@ -43,6 +43,14 @@ select the file format we want to store the data.
 
 Here csv.
 
+provide the location we want to store the file.
+
+select first row has header.
+ 
+ schema none
+
+Because the file we have haven't schema architecture.
+
 
 
 
