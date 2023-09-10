@@ -1,3 +1,4 @@
+# creating a resource group
 In every organization they created different different resource group for different department.
 In a resource group we choose different services available in azure that a department require to perform their task.
 for different departments the services they are going to use different.
