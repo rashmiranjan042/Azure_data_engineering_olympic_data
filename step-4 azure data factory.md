@@ -59,13 +59,17 @@ Integration runtime is the compute infrastructure us by Adf to provide integrart
 There are 3 types of integreation runtimes.
 
 1) azure integration runtime
+   
 2) self hosted integration runtime
+
 3)azure ssis( sql service integration service) integration runtime
 
 # when to use what kind of ir ?
 
 1) for azure services, like if you want to perform copy activities between azure services like, azure blob storage, sql server, cosmos db and other azure owned databae service, we will run azure integration runtime.
+
 2) for onpremises, virtual network , use azure self hosted integration runtime
+
 3) for your ssis packages use ssis integration runtime.
 
 when we click on the configure ssis, it will open a window for integration runtime setup.
@@ -86,3 +90,22 @@ again click on cancel
 it will take back to you manage integration runtime page.
 
 Where you can create integration runtime.
+
+# author
+
+when we click on author, as we can see that there 5 things availbe to do operation.
+
+1)pipeline
+
+2)change data capture (cdc preview)
+
+3)datasets
+
+4)data flows
+
+5)power query
+
+using this we will create a pipeline and run activities .
+
+cdc in preview phase it will lauch by azure in upcoming days in which it will going to be stable.
+
