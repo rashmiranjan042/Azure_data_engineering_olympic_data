@@ -1,3 +1,4 @@
+# Adding services to the resource group
 click on the resource groups to see the resource group that we create.
 
 click on that name we give for our resource group name.
