@@ -37,3 +37,9 @@ Databricks is a cloud-based analytics platform that is built on top of Apache Sp
 
 **cluster** Have the spark engine and other compnents that make the computation successful.
 
+ Databricks integrates with a wide range of data sources and services,
+ 
+ including data lakes, databases, and third-party libraries.
+
+ so by integrating with data lake we run our project.
+
