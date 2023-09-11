@@ -43,8 +43,41 @@ Databricks is a cloud-based analytics platform that is built on top of Apache Sp
 
  so by integrating with data lake we run our project.
 
- # lets mount the azure data lake to azure data bricks dbfs.
+ # lets create cluster and mount the data lake to databricks.
 
+ Here I am using the data bricks community edition.
+
+ But most of the things are similar to enterprise editon.
+
+ IN community edition we can connect with cloud service like azure , aws, gcp.
+
+ **creating cluster**
  
+click on compute,
+
+provide cluster name
+
+choose cluster mode
+
+select data bricks runtime version
  
+☑ Enable auto scaling
+
+☑ Terminate after 120 minutes of inactivity.
+
+worker type
+
+choose the memory size and dbu you require to compute.  
+
+Here we took 14 gb mem ,4 core, 0.75 dbu which is lower.       
+
+choose min workers max workers
+
+Here this workers min to max workers are autoscale.
+
+driver type 
+
+same as worker
+
+In community edition we have to just provide compute name.
 
