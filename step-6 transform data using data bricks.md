@@ -88,3 +88,18 @@ click create to create.
 after 4 to 5 min it will create cluster for you.
 
 ![Screenshot 32](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/ec3e3ae0-ecd7-42ef-a20d-bd30c31c1ca7)
+Cluster Dashboard:
+
+This is the cluster dashboard  where we
+
+Select the cluster we want to monitor.
+
+The Cluster Dashboard provides an overview of cluster resource usage, including CPU, memory, and network metrics. You can view historical data and real-time metrics here.
+
+Metrics:
+
+Within the Cluster Dashboard, you can access specific metrics for driver and worker nodes. This allows you to monitor memory and CPU usage on a per-node basis.
+
+ so that we can track the resource and accumulate the usage of resouce.
+
+ 
