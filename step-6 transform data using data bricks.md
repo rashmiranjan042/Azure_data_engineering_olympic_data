@@ -106,6 +106,8 @@ Click on create
 
 create notebook 
 
+![Screenshot 33](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/88b49430-84b2-4d35-a46b-0df2d5e79adb)
+
 where we are going to mount our adls gen2 and perform operation on the data.
 
 # mount azure adls gen2 container to databricks
@@ -120,7 +122,11 @@ spark
 
 in notebook , it will show all the details.
 
+![Screenshot 37](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/32e535e2-e57f-4559-bf3d-f55b1d28d519)
+
 **mount code**
+
+![Screenshot 38](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/83d6648a-a3af-4299-ab24-205686f720b3)
 
 source="wasbs://<container-name>@<storageaccount-name>.blob.core.windows.net"
 
@@ -153,6 +159,8 @@ extra-configs={conf_key:key_name}
 
 )
 
+![Screenshot 39](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/8490d455-9037-4ae1-875e-eba2cef00cd2)
+
 **%fs**
 **ls /mnt/<mount_name>** 
 
@@ -163,3 +171,8 @@ extra-configs={conf_key:key_name}
  **raw data**
 
  **transformed data**
+ 
+![Screenshot 40](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/b2ac0153-aa35-4993-a45e-6bc9b80ac17d)
+
+
+![Screenshot 41](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/0f1abb9c-6f4f-4d13-9ce4-27b77af81b53)
