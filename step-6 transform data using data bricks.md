@@ -177,5 +177,5 @@ extra-configs={conf_key:key_name}
 
 ![Screenshot 41](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/0f1abb9c-6f4f-4d13-9ce4-27b77af81b53)
 
-# lets analyze this data we got
+
 
