@@ -172,7 +172,7 @@ extra-configs={conf_key:key_name}
 
  **transformed data**
  
-![Screenshot 40](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/f39255b3-812d-447c-9b73-7965d8683465)
+![Screenshot 40 (2)](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/e2190757-f145-4899-b139-0f4824758f7b)
 
 
 ![Screenshot 41](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/0f1abb9c-6f4f-4d13-9ce4-27b77af81b53)
