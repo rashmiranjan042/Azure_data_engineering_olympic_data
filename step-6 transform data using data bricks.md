@@ -4,7 +4,7 @@ lets understand this little bit, then we perform our Analytics.
 
 Before going to databricks lets know a little bit about spark
 
-**Apache Spark**
+# Apache Spark
 
 spark is an open source unified analytics engine for large scale of data processing.
 
@@ -15,7 +15,7 @@ These are the features.
 3) Highly Scalable Architecture
 4) Unifies Vareity of use cases
 
-**Hadoop**
+# Hadoop
 
 Hadoop is an open-source distributed storage and processing framework. 
 
@@ -31,7 +31,7 @@ It uses **MAPREDUCE** programming model to process the data.
 
 which is written on **Java**.
 
-**DATABRICKS**
+# DATABRICKS
 
 Databricks is a cloud-based analytics platform that is built on top of Apache Spark, which is a fast and general-purpose cluster computing system. 
 
