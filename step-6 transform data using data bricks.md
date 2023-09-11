@@ -43,3 +43,8 @@ Databricks is a cloud-based analytics platform that is built on top of Apache Sp
 
  so by integrating with data lake we run our project.
 
+ # lets mount the azure data lake to azure data bricks dbfs.
+
+ 
+ 
+
