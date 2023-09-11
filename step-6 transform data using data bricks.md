@@ -107,3 +107,59 @@ Click on create
 create notebook 
 
 where we are going to mount our adls gen2 and perform operation on the data.
+
+# mount azure adls gen2 container to databricks
+
+**note**
+
+IN databricks we dont need to create a spark session as we do in google collab.
+
+just type
+
+spark
+
+in notebook , it will show all the details.
+
+**mount code**
+
+source="wasbs://<container-name>@<storageaccount-name>.blob.core.windows.net"
+
+mount_point="/mnt/<mount-name>"
+
+conf_key="fs.azure.accountkey.<storage-account-name>.blob.core.windows.net"
+
+key_name="<access_key>"
+
+**or sas key(shared access signature)**
+
+conf_key="fs.azure.sas.<container-name>.<storage-account-name>blob.core.windows.net"
+
+key_name="<sas_key>"
+
+
+ **<> in this location we are going to provide value**
+ 
+ **then delete this operator.**
+ 
+ **here the mount name give it will create that folder.**
+
+dbutils.fs.mount( 
+
+source = source,
+
+mount_point= mount_point,
+
+extra-configs={conf_key:key_name}
+
+)
+
+**%fs**
+**ls /mnt/<mount_name>** 
+
+ the name we give at the time of mounting
+
+ it will show us the folders inside our **olympicdata2021 container**
+
+ **raw data**
+
+ **transformed data**
