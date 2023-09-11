@@ -122,7 +122,7 @@ spark
 
 in notebook , it will show all the details.
 
-![Screenshot 37](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/32e535e2-e57f-4559-bf3d-f55b1d28d519)
+![Screenshot 37](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/51a0e431-b2fe-48ff-8d1c-df8cc51245ff)
 
 **mount code**
 
