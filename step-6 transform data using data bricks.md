@@ -81,3 +81,8 @@ same as worker
 
 In community edition we have to just provide compute name.
 
+click create to create.
+
+![Screenshot 31](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/d92d1e47-1f11-4597-8dc5-65454915abc5)
+
+after 4 to 5 min it will create cluster for you.
