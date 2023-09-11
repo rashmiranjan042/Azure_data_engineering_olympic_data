@@ -178,4 +178,10 @@ extra-configs={conf_key:key_name}
 ![Screenshot 41](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/0f1abb9c-6f4f-4d13-9ce4-27b77af81b53)
 
 
+# after transform store data to adlsgen2 
+
+In our olympicdata2021 container, we write the transformed file into transformed data folder.
+
+![image](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/c4b1a99d-565e-4bec-9289-882e9fa24d80)
+
 
