@@ -102,4 +102,8 @@ Within the Cluster Dashboard, you can access specific metrics for driver and wor
 
  so that we can track the resource and accumulate the usage of resouce.
 
- 
+Click on create 
+
+create notebook 
+
+where we are going to mount our adls gen2 and perform operation on the data.
