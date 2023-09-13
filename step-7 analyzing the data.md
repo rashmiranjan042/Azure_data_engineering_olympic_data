@@ -92,4 +92,23 @@ By doing this **we convert the files into data frame** and assign into the varia
 
 
 
+![Screenshot 58](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/53904ff3-c9d0-4446-b09f-0e36550b230e)
 
+
+
+![Screenshot 59](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/109c5dd8-536a-40fa-9ef4-e1cae06233ba)
+
+
+![Screenshot 60](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/cc405faa-ec80-40ed-adf2-b9eab58aff01)
+
+
+
+![Screenshot 61](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/af3429cc-ed22-4ee7-9780-13d2f5994495)
+
+
+
+![Screenshot 62](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/2fecc5c5-3e72-4344-852f-4de7aeccdfe9)
+
+
+
+![Screenshot 63](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/aa5d21fb-aa2c-49b8-923b-089f7a3ce42a)
