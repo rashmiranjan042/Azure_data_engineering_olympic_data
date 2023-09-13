@@ -55,11 +55,5 @@ By doing this **we convert the files into data frame** and assign into the varia
 # Things we are going to look at 
 
 
-1) top 5 countries Rank On  gold medals.
-
-2) No of paticipants from each country
-
-3) 
-
 
 
