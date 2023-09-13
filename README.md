@@ -1,7 +1,7 @@
 # Azure_data_engineering_olympic_data
 
 Here We are going to ingest the olympic data of 2021 into azure cloud and perform data engineering tasks .
-After that we analyze this data and make a report.
+After that we analyze this data using databricks.
 
 All the codes and processes will be available here . 
 
