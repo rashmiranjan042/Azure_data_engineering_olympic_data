@@ -52,7 +52,9 @@ teams.show()
 
 By doing this **we convert the files into data frame** and assign into the variable.
 
-# Things we are going to look at 
+# Lets use pyspark.pandas to read file instead pyspark.sql
+
+
 
 
 
