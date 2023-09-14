@@ -150,24 +150,51 @@ toatal_discipline=no_of_dicsipline.size().sort_values(ascending=False).count()
 toatal_discipline
 # no_of_discipline = 46
 ```
+```python
+country_players.head(5)
+```
 
 ![Screenshot 58](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/53904ff3-c9d0-4446-b09f-0e36550b230e)
 
 
+```python
+coaches=pd.read_csv('dbfs:/FileStore/Coaches.csv')
+coaches.head(10)
+```
 
 ![Screenshot 59](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/109c5dd8-536a-40fa-9ef4-e1cae06233ba)
 
+```python
+coaches.sort_values(['Name']).head(10)
+```
 
 ![Screenshot 60](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/cc405faa-ec80-40ed-adf2-b9eab58aff01)
 
+```python
+coaches.shape[0]
+# 394 coaches participated in olympic 2021
+```
+```python
+# coaches by country
 
+coahes_by_country=coaches.groupby('NOC')
+```
 
 ![Screenshot 61](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/af3429cc-ed22-4ee7-9780-13d2f5994495)
 
-
+```python
+coahes_by_country.size().sort_values(ascending=False)
+```
 
 ![Screenshot 62](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/2fecc5c5-3e72-4344-852f-4de7aeccdfe9)
 
+```python
+coahes_by_country.size().sort_values(ascending=False).count()
 
+# so total 61 countries send total 394 coaches for their players among 206 counties
+```
+```python
+entriesGender.head(10)
+```
 
 ![Screenshot 63](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/aa5d21fb-aa2c-49b8-923b-089f7a3ce42a)
