@@ -178,10 +178,31 @@ ls /mnt/<mount_name>
  **transformed data**
  
 ![Screenshot 40 (2)](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/e2190757-f145-4899-b139-0f4824758f7b)
+**in picture true should beTrue**
+```python
+athletes=spark.read.option(header=True,inferSchema=True).format(csv).load("/mnt/<mount-name>/Rawdata/atheletes.csv")
 
+coaches=spark.read.option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Rawdata/coaches.csv")
 
+entriesGender=spark.read.option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Rawdata/entriesGender.csv")
+
+medals=spark.read.option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Rawdata/medals.csv")
+
+teams=spark.read.option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Rawdata/teams.csv")
+```
 ![Screenshot 41](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/0f1abb9c-6f4f-4d13-9ce4-27b77af81b53)
 
+```python
+athelets.show()
+
+coaches.show()
+
+entriesGender.show()
+
+medals.show()
+
+teams.show()
+```
 
 ## after transform store data to adlsgen2 
 
@@ -189,4 +210,14 @@ In our olympicdata2021 container, we write the transformed file into transformed
 
 ![image](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/c4b1a99d-565e-4bec-9289-882e9fa24d80)
 
+```python
+athletes.write.mode(overwrite).repartition(1).option(header=True,inferSchema=True).csv.load("/mnt/<mount-name>/Transformeddata/atheletes.csv")
 
+coaches.write.mode(overwrite).repartition(1).option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Transformeddata/coaches.csv")
+
+entriesGender.write.mode(overwrite).repartition(1).option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Transformeddata/entriesGender.csv")
+
+medals.write.mode(overwrite).repartition(1).option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Transformeddata/medals.csv")
+
+teams.write.mode(overwrite).repartion(1).option(header=True,inferschema=True).format(csv).load("/mnt/<mount_name>/Transformeddata/teams.csv")
+```
