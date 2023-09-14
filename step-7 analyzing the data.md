@@ -1,24 +1,24 @@
 # Analyzing olympic data.
 
-As i am using databricks community edition 
+- As i am using databricks community edition 
 
-lets see how to upload data to dbfs and access it.
+- lets see how to upload data to dbfs and access it.
 
-then perform analyze on top of that data.
+   then perform analyze on top of that data.
 
 ![Screenshot 42](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/d4fe50d0-ae1b-4ccb-877b-6c68f8f34015)
 
-# Accessing data from DBFS
+## Accessing data from DBFS
 
 After uploading the data to dbfs.
 
-click on data 
+- click on data 
 
-go to dbfs
+- go to dbfs
 
-click on the file , copy path
+- click on the file , copy path
 
-copy spark api format.
+- copy spark api format.
 
 ![Screenshot 45](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/2b8b85ce-248d-4760-af0c-d2353d68f186)
 
@@ -27,6 +27,7 @@ write the code to read the file from dbfs.
 
 ![Screenshot 46](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/127e6fcf-28f4-4b06-a58c-e08d8e6992df)
 
+```python
 athlets=spark.read.csv("dbfs:/FileStore/Athletes.csv",header=True,inferSchema=True)
 
 athlets.show()
@@ -49,48 +50,106 @@ medals.show()
 teams=spark.read.csv("dbfs:/FileStore/Teams.csv",inferSchema=True,header=True)
 
 teams.show()
+```
 
 By doing this **we convert the files into data frame** and assign into the variable.
 
-# Lets use pyspark.pandas to read file instead pyspark.sql
+## Lets use pyspark.pandas to read file instead pyspark.sql
 
 
 ![Screenshot 47](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/d77f7d16-3549-4407-bf00-286f18169d82)
 
+```python
+spark
+```
 
 ![Screenshot 48](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/750143fd-a394-4f59-a417-95a0ebd6ed87)
 
+```python
+import pyspark.pandas as pd
+pd
+```
 
 ![Screenshot 49](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/52f37525-b616-45c8-b340-30096f72afe5)
 
-
+```python
+athlets=pd.read_csv('dbfs:/FileStore/Athletes.csv')
+athlets.head(100)
+```
 
 ![Screenshot 50](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/7966f551-3590-40b2-a532-b3a8900f66e7)
 
 
+```python
+athlets.info()
+```
+
+
 ![Screenshot 51](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/21497991-b240-40a9-a183-bf9419ff00fb)
 
+```python
+athlets.shape
+
+athlets.shape[0]
+
+# total participants player = 11085
+```
 
 
 ![Screenshot 52](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/79b9e61b-6a26-4778-8ffa-aa089dd8c01b)
 
+```python
+# lets group by noc to find total countries and their players.
 
-
+no_of_countries=athlets.groupby('NOC')
+```
 ![Screenshot 53](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/7d896d60-2774-41c3-9c77-73728900760a)
 
-
+```python
+len(athlets)
+```
+```python
+no_of_countries
+```
 ![Screenshot 54](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/2cc30d77-6ae4-4572-8a69-fa63715591f3)
 
+```python
+country_players=no_of_countries.size().sort_values(ascending=False)
+country_players
+# total no_of_Players of each country
+```
 
 ![Screenshot 55](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/bcccaf30-d85b-4ed9-84ea-3a004486456b)
 
+```python
+toatl_countries=no_of_countries.size().sort_values(ascending=False).count()
+
+# total countries parcticipated in olypmpics
+
+toatl_countries
+
+#206 countries
+```
 
 ![Screenshot 56](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/1d698c40-232e-4022-ba6c-783957489c14)
 
+```python
+# no of disciplined / games played in olympics.
+
+no_of_dicsipline= athlets.groupby('Discipline')
+```
+```python
+no_of_dicsipline.size().sort_values(ascending=False)
+```
 
 ![Screenshot 57](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/062d9244-8e2e-4a55-988e-444bbcac8cd4)
 
+```python
+toatal_discipline=no_of_dicsipline.size().sort_values(ascending=False).count()
 
+toatal_discipline
+# no_of_discipline = 46
+```
 
 ![Screenshot 58](https://github.com/rashmiranjan042/Azure_data_engineering_olympic_data/assets/106671482/53904ff3-c9d0-4446-b09f-0e36550b230e)
 
