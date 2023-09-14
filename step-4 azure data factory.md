@@ -1,6 +1,6 @@
 # Lets perform etl using ADF
 
--It is the cloud based etl and data integration service.
+- It is the cloud based etl and data integration service.
 
 - That allows us to **create data driven workflows** for orchestrating data movement and transformation at scale.
 
