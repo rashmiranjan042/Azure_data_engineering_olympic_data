@@ -4,7 +4,7 @@
 
 - That allows us to **create data driven workflows** for orchestrating data movement and transformation at scale.
 
-**it is not the oltp**
+
 
 - Here we only **orchestrate data movement and do some transformation.**
 
